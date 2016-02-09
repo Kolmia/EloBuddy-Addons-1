@@ -42,7 +42,7 @@ namespace SimplisticTemplate.Champion.Fizz.Modes
                 return;
             }
 
-            if (useR && Fizz.R.IsReady() && Fizz.R.GetPrediction(target).HitChance > HitChance.High)
+            if (useR && Fizz.R.IsReady())// && Fizz.R.GetPrediction(target).HitChance > HitChance.High)
             {
                 if (ComboDamage(target) - 30 > target.Health)
                 {
